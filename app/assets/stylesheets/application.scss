@@ -1,0 +1,70 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require font-awesome
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+h1, h2, h3 {
+  font-family: 'Muli', sans-serif;
+  padding-bottom: 15px;
+}
+p, a {
+    font-family: 'Open Sans', sans-serif;
+    color: #4D5053;
+}
+table {
+  margin: 5px 0;
+}
+td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+.banner {
+  background-color: #797979;
+  background-position: cover;
+  text-align: center;
+  height: 100px;
+  color: white;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+.banner h1 {
+  padding: 40px;
+}
+.banner a {
+  color: white;
+}
+.container {
+  width: 1000px;
+  margin: 0 auto;
+
+}
+.container a:hover {
+  text-decoration: none;
+  background-color: white;
+  color: #CC4B4B;
+}
+.new {
+  font-size: 20px;
+}
+#show {
+  font-size: 20px;
+}

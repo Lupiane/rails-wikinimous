@@ -6,9 +6,20 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Muli|Open+Sans');
+    </style>
   </head>
 
   <body>
+  <div class="banner">
+    <div class="title">
+      <h1>Wikinimous <i class="fa fa-book" aria-hidden="true"></i></h1>
+    </div>
+    <div class="new">
+      <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> <%= link_to 'Write a New Article', new_article_path %>
+    </div>
+  </div>
     <%= yield %>
   </body>
 </html>
